@@ -1,12 +1,66 @@
+# Draft README for your new public repo
+
+Create the repo as `LjubaCeranic/epfl-projects` (public), paste the text below `---` into README.md,
+and upload the four report PDFs with these exact filenames:
+
+- `Shor_three_oscillators_report.pdf`
+- `OptML_report.pdf`
+- `ML_project1_report.pdf`
+- `ML_project2_report.pdf`
+
+**Do not copy the READMEs from the course repos.** The OptML one is yours and is good, but the
+project-2 one is the course's boilerplate — it describes the assignment and the provided baseline
+pipeline, not what your team did. Publishing it would say nothing about you.
+
+---
+
 # EPFL projects
 
-Selected machine learning and quantum computing projects from my studies at EPFL — BSc Physics,
+Selected quantum computing and machine learning projects from my studies at EPFL — BSc Physics,
 now MSc Quantum Science and Engineering, specialising in Quantum Information.
 
 [LinkedIn](https://www.linkedin.com/in/ljubomirceranic)
 
-> The code for these projects lives in private EPFL course repositories and is not mine alone to
-> publish — EPFL reuses projects between years. The written reports are here in full.
+> The code for the machine learning projects lives in private EPFL course repositories and is not
+> mine alone to publish — EPFL reuses projects between years. The written reports are here in full.
+
+---
+
+## Factoring an Integer with Three Oscillators and a Qubit — a mathematical and energetic analysis
+
+**QUANT-401 Project in Quantum Science I · EPFL · supervised by Prof. Nicolas Macris · grade 5.25/6**
+**Single author.**
+📄 **[Read the report](Shor_three_oscillators_report.pdf)** (34 pages)
+
+A detailed analysis of the factoring algorithm of Brenner, Caha, Coiteux-Roy and König, which
+factors an integer *N* using only three bosonic oscillators and a single qubit — independent of the
+size of *N*. It reaches Shor's polynomial-time complexity by replacing modular arithmetic with real
+arithmetic on continuous-variable position states, and the discrete Fourier transform with a
+homodyne *P*-quadrature measurement.
+
+The report develops the continuous-variable formalism from scratch, derives the action of every gate
+in the circuit, analyses the idealised algorithm in full, and proves correctness of the physical
+finitely-squeezed version together with its error bounds. Detailed proofs and technical lemmas are in
+the appendices.
+
+**The energetic analysis**
+
+Beyond reproducing the protocol, the report asks what it would actually cost to run. The GKP states
+the algorithm needs must be extremely tightly squeezed, and squeezing costs oscillator energy:
+
+- Total energy scales as **2^Θ(n²)** where *n* = ⌈log₂ N⌉ — exponential in the *square* of the bit
+  length, not in the bit length.
+- For a **two-digit** modulus the requirement already exceeds the mass-energy of the observable
+  universe (~4 × 10⁶⁹ J) by a factor of ~10⁴³⁷.
+- For a **three-digit** modulus it exceeds it by ~990 orders of magnitude.
+- Because the exponent grows as n², one extra bit multiplies the cost by ~10⁵⁴. The requirement
+  vaults from nuclear-arsenal scale to beyond-the-universe scale within a single bit — there is no
+  integer whose cost lands at an intermediate stellar or galactic scale.
+- Restated in occupation number, the dominant mode would have to sit at roughly its 10¹⁰⁸³-th energy
+  level for a three-digit modulus.
+
+The conclusion is a trade-off worth stating plainly: the protocol buys a constant number of modes at
+the price of an energy requirement that is not merely impractical but unphysical.
 
 ---
 
@@ -89,4 +143,4 @@ implemented from scratch, without any machine learning library.**
 ## Notes
 
 Reports are the authors' own written work, shared with their agreement. Course code is deliberately
-not published.
+not published. The quantum report is single-author and published with my supervisor's agreement.
