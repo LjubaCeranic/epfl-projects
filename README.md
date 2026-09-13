@@ -1,19 +1,3 @@
-# Draft README for your new public repo
-
-Create the repo as `LjubaCeranic/epfl-projects` (public), paste the text below `---` into README.md,
-and upload the four report PDFs with these exact filenames:
-
-- `Shor_three_oscillators_report.pdf`
-- `OptML_report.pdf`
-- `ML_project1_report.pdf`
-- `ML_project2_report.pdf`
-
-**Do not copy the READMEs from the course repos.** The OptML one is yours and is good, but the
-project-2 one is the course's boilerplate — it describes the assignment and the provided baseline
-pipeline, not what your team did. Publishing it would say nothing about you.
-
----
-
 # EPFL projects
 
 Selected quantum computing and machine learning projects from my studies at EPFL — BSc Physics,
